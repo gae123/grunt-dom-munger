@@ -13,7 +13,7 @@ var cheerio = require('cheerio');
 
 var toArray = function(value) {
   return (Array.isArray(value)) ? value : [value];
-}
+};
 
 module.exports = function(grunt) {
 
@@ -39,7 +39,11 @@ module.exports = function(grunt) {
           });
 
           if (option.isPath){
-            var relativeTo = path.dirname(grunt.file.expand(f));
+            var expansion = grunt.file.expand(f);
+            if (Array.isArray(expansion)) {
+                expansion = expansion[0];
+            }
+            var relativeTo = path.dirname(expansion);
             vals = vals.map(function(val){
               return path.join(relativeTo,val);
             });
