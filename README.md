@@ -278,6 +278,7 @@ grunt.initConfig({
 ```
 
 ## Release History
+ * v3.4.1 - Support for building in a node 6.5 environment
  * v3.4.0 - Update task actions ordering.  Reads always first, removes second, all others after.
  * v3.3.0 - All task actions can now be arrays for multiple actions per type.
  * v3.2.0 - Added second `file` argument to callback (#15).
