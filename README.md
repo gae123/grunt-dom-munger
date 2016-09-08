@@ -1,4 +1,4 @@
-# grunt-dom-munger [![Build & Test Status](https://travis-ci.org/gae123/grunt-dom-munger?branch=master)](https://travis-ci.org/gae123/grunt-dom-munger)
+# grunt-dom-munger [![Build & Test Status](https://travis-ci.org/gae123/grunt-dom-munger.png?branch=master)](https://travis-ci.org/gae123/grunt-dom-munger)
 
 > Read and manipulate HTML documents using CSS selectors.
 
